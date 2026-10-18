@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>PSFreeCortex // Enter The Cortex</title>
+<style>
+*{box-sizing:border-box}html,body{margin:0;min-height:100%;background:#08090e;color:#eee5e7;font:15px Arial,sans-serif}body{background:radial-gradient(ellipse at 65% 24%,#30121c 0%,#08090e 55%);overflow-x:hidden}
+a{color:inherit;text-decoration:none}button{font:inherit}main{position:relative;max-width:1220px;margin:auto;padding:26px 30px;min-height:100vh}
+header{border-bottom:1px solid #52303a;display:flex;justify-content:space-between;align-items:center;padding-bottom:19px}.mark{color:#ed6577;font-size:27px}.brand{font-weight:bold;letter-spacing:4px;font-size:18px}.small{font:11px monospace;letter-spacing:2px;color:#b6959e}
+.hero{display:flex;align-items:center;justify-content:space-between;gap:28px;min-height:380px}.copy{max-width:620px}.eyebrow{color:#e47d8d;font:12px monospace;letter-spacing:3px}.copy h1{font-size:clamp(40px,6vw,84px);line-height:1;margin:18px 0;letter-spacing:1px}.copy h1 em{font-style:normal;color:#e95870}.copy p{color:#bea4ab;line-height:1.65;max-width:520px}
+.orbit{width:255px;height:255px;flex:none;position:relative;display:flex;align-items:center;justify-content:center}.ring{position:absolute;border:1px solid #9e394d;border-radius:50%;animation:turn 24s linear infinite}.one{inset:5px;border-style:dashed}.two{inset:35px;animation-direction:reverse}.three{inset:68px}.core{width:79px;height:79px;border:1px solid #de6777;background:radial-gradient(circle,#dc6175,#7f2539 44%,#1b101b 75%);border-radius:50%;box-shadow:0 0 40px #a02b48;animation:pulse 4s ease-in-out infinite}
+.orbit i{position:absolute;width:4px;height:4px;background:#f2a0aa;border-radius:50%;box-shadow:0 0 7px #db556d}.orbit i:nth-of-type(1){top:25px;left:70px}.orbit i:nth-of-type(2){bottom:44px;right:34px}.orbit i:nth-of-type(3){left:17px;bottom:100px}
+.entry{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:14px}.tile{background:#151219;border:1px solid #52303a;padding:25px;min-height:225px;position:relative}.tile:before{content:"";position:absolute;height:2px;top:0;left:0;right:0;background:linear-gradient(90deg,#d73b53,transparent)}.tile h2{font-size:21px;margin:17px 0 10px}.tile p{color:#b39ca4;font-size:13px;line-height:1.6;min-height:51px}.tag{font:11px monospace;color:#e77d8c;letter-spacing:2px}
+.cta{display:inline-block;background:#a52f44;color:#fff;border:1px solid #ec8090;padding:14px 18px;font:700 12px monospace;letter-spacing:2px;cursor:pointer}.cta:hover,.cta:focus,.alt:focus{outline:2px solid #ffd1da;outline-offset:3px;background:#cb4056}.alt{background:#2b1d27}
+.bar{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;border:1px solid #53303a;background:#141219;padding:15px 20px;margin-top:15px;color:#d1aeb7;font:12px monospace}
+footer{padding:28px 0;color:#887881;font:11px/1.7 monospace}footer a{text-decoration:underline}
+.off .orbit *{animation:none!important} @keyframes turn{to{transform:rotate(360deg)}}@keyframes pulse{50%{transform:scale(1.09);filter:brightness(1.2)}}
+@media(max-width:830px){.orbit{width:160px;height:160px}.one{inset:3px}.two{inset:20px}.three{inset:44px}.core{width:48px;height:48px}.entry{grid-template-columns:1fr 1fr}.tile:first-child{grid-column:span 2}}
+@media(max-width:560px){main{padding:19px 15px}.hero{min-height:260px}.orbit{display:none}.entry{display:block}.tile{margin-bottom:12px;min-height:0}.brand{font-size:15px}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important}}
+</style></head>
+<body><main>
+<header><div><span class="mark">⟡</span> <span class="brand">PSFREE<span style="color:#e76679">CORTEX</span></span></div><span class="small">PS4 // FIRMWARE 9.00</span></header>
+<section class="hero"><div class="copy"><div class="eyebrow">THE GATEWAY IS OPEN</div><h1>ENTER<br>THE <em>CORTEX.</em></h1><p>A custom PS4 browser environment. Designed with the CORTEX visual language while keeping the original PSFree source and licenses separately identifiable.</p><span class="small">STANDALONE / CORTEX INTERFACE 001</span></div><div class="orbit" aria-hidden="true"><div class="ring one"></div><div class="ring two"></div><div class="ring three"></div><div class="core"></div><i></i><i></i><i></i></div></section>
+<section class="entry" aria-label="Main navigation">
+<div class="tile"><div class="tag">01 // ENTRANCE</div><h2>ENTER THE CORTEX</h2><p>Continue into the CORTEX system overview. This is a safe UI preview; exploit execution is not initiated here.</p><a class="cta" href="#system" id="enter">ENTER THE CORTEX →</a></div>
+<div class="tile" id="system"><div class="tag">02 // PSFREE</div><h2>PSFREE ENVIRONMENT</h2><p>Original PSFree-Lapse source is present in this fork. Exploit activation is intentionally separate from this UI preview.</p><span class="small">SOURCE AVAILABLE / NOT STARTED</span></div>
+<div class="tile"><div class="tag">03 // PAYLOADS</div><h2>PAYLOAD DIRECTORY</h2><p>Reserved for a future user-controlled menu. No payload is executed by this page.</p><span class="small">COMING LATER</span></div>
+</section>
+<div class="bar"><span>CONSOLE: <strong id="console">DETECTING</strong> &nbsp; / &nbsp; UI STATUS: READY</span><button class="cta alt" type="button" id="motion">MOTION: LOW</button></div>
+<footer>INDEPENDENT CORTEX UI CONCEPT • UPSTREAM CREDIT: <a href="https://github.com/kmeps4/PSFree">KMEPS4 / PSFREE</a> • <a href="./about.html">LICENSE INFORMATION</a></footer>
+</main><script>
+(function(){var m=(navigator.userAgent||"").match(/PlayStation (4|5)[ \/]([0-9]{1,2}\.[0-9]{2})/);document.getElementById("console").textContent=m?"PS"+m[1]+" "+m[2]:"PC / OTHER";var b=document.getElementById("motion");b.onclick=function(){var off=document.body.classList.toggle("off");b.textContent=off?"MOTION: OFF":"MOTION: LOW"};try{if(window.matchMedia&&window.matchMedia("(prefers-reduced-motion: reduce)").matches)b.click()}catch(e){}
+})();
+</script></body></html>
